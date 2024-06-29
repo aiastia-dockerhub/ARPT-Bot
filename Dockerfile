@@ -22,7 +22,7 @@ RUN apt-get install nginx -y
 
 COPY root /
 RUN apt install ffmpeg -y
-RUN sudo chmod 777 /install.sh
+RUN chmod 777 /install.sh
 RUN bash install.sh
 
 RUN mv /nginx.conf /etc/nginx/
@@ -32,7 +32,7 @@ RUN mkdir /root/.aria2
 COPY config /root/.aria2/
 RUN pip3 install --upgrade pip
 
-RUN sudo apt-get install gcc libffi-dev libssl-dev  -y
+RUN apt-get install gcc libffi-dev libssl-dev  -y
 
 RUN pip3 install -U pyrogram tgcrypto
 #RUN pip3 install pillow
@@ -61,7 +61,7 @@ RUN mkdir /bot
 COPY bot /bot
 RUN chmod 0777 /bot/ -R
 
-RUN sudo chmod 777 /root/.aria2/
+RUN chmod 777 /root/.aria2/
 
 COPY /config/upload.sh /
 RUN chmod 0777 /upload.sh
