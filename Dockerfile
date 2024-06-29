@@ -70,10 +70,10 @@ RUN pip3 install --upgrade pip && \
 COPY root /
 COPY config /root/.aria2/
 COPY nginx.conf /etc/nginx/
-COPY /index.html /index/
+COPY index.html /index/
 COPY bot /bot
-COPY /config/upload.sh /
-COPY /start.sh /
+COPY config/upload.sh /
+COPY start.sh /
 
 RUN chmod -R 0777 /bot /root/.aria2 /upload.sh /start.sh && \
     chmod 777 /install.sh && \
