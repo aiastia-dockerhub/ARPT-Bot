@@ -3,10 +3,10 @@ FROM ubuntu
 # 设置时区
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     echo 'Asia/Shanghai' >/etc/timezone
-
+RUN apt update && sudo apt upgrade -y
 # 更新并安装所需的包
-RUN apt-get update && \
-    apt-get install -y \
+RUN 
+    apt install -y \
         wget \
         git \
         curl \
