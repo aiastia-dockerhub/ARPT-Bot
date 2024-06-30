@@ -80,4 +80,4 @@ RUN chmod -R 0777 /bot /root/.aria2 /upload.sh /start.sh && \
     bash install.sh
 
 # 设置启动命令
-CMD wget https://raw.githubusercontent.com/666wcy/ARPT-Bot/main/start.sh -O start.sh && chmod 0777 start.sh && bash start.sh
+CMD wget https://raw.githubusercontent.com/aiastia-dockerhub/ARPT-Bot/main/start.sh -O start.sh && chmod 0777 start.sh && bash start.sh
