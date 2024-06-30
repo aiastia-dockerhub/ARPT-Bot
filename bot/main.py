@@ -1,4 +1,4 @@
-.# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from apscheduler.schedulers.background import BackgroundScheduler
 import sys
 from modules.check import new_clock, second_clock
